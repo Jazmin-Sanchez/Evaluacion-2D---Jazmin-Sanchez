@@ -8,7 +8,7 @@ import numpy as np
 plt.axis([-10,350,-10,300])
 plt.axis('on')
 plt.grid(True)
-plt.title('Examen de graficación 2D Sanchez Jazmin')
+plt.title('Evaluación de graficación 2D Sanchez Jazmin')
 
 #Primer rectangulo (Ultimos 3 digitos de mi numero de control = 058)
 x1=0
