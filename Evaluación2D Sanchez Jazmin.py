@@ -26,7 +26,7 @@ x1=100
 x2=300
 y1=240
 y2=80
-
+#Hola
 plt.plot([x1,x1],[y1,y2],linewidth=1,color=(.5,0,.8))
 plt.plot([x2,x2],[y1,y2],linewidth=1,color=(.5,0,.8))
 plt.plot([x1,x2],[y1,y1],linewidth=1,color=(.5,0,.8))
