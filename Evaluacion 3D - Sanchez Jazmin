@@ -1,0 +1,36 @@
+# Examen de graficacion 2d sanchez canul jazmin yamilet.
+# 1/02/2021 No. control = 18390058
+
+import matplotlib.pyplot as plt
+import numpy as np
+from math import sin, cos, radians, sqrt
+import keyboard
+
+plt.axis([0,150,100,0])
+plt.axis('on')
+plt.grid(True)
+
+x=[40,30,80,45,85] #———plano
+y=[60,10,60,45,40]
+z=[0,0,0,0]
+
+
+
+plt.plot([x[0],x[1]],[y[0],y[1]],color='k') #——área de etiqueta A
+plt.plot([x[1],x[2]],[y[1],y[2]],color='k')
+plt.plot([x[2],x[0]],[y[2],y[0]],color='k')
+
+pntx = int(input('ingresa la coordena x del hitpoint ='))
+pnty = int(input('ingresa la coordena y del hitpoint ='))
+
+xg=[pntx]
+yg=[pnty]
+
+plt.scatter(xg[0],yg[0],s=20,color='r')
+
+plt.plot([x[0],xg[0]],[y[0],yg[0]],linestyle=':',color=(0,.5,.8)) #trazo
+plt.plot([x[1],xg[0]],[y[1],yg[0]],linestyle=':',color=(.5,0,.8))
+plt.plot([x[2],xg[0]],[y[2],yg[0]],linestyle=':',color=(0,.8,.5))
+
+
+plt.show()
